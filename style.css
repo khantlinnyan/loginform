@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+:root {
+    font-size: 16px;
+    font-size: 100%;
+    line-height: 1.5;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    font-size: 2.20rem;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.small {
+    font-size: 80%;
+    text-align: center;
+    color: black;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.leftContainer {
+    height: 150px;
+}
+.leftContainer, .rightContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftChild {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.leftChild div {
+    margin-top: 1rem ;
+}
+
+.logoImg {
+    margin: 1.3rem;
+    width: 4.5rem;
+}
+.leftContainer {
+    background-color: #222222;
+}
+.leftContainer section h1,p {
+    color: white;
+}
+
+.rightContainer .rightChild {
+    color: #222222;
+    text-align: center;
+    margin: 1.5em 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.rightChild div {
+    text-align: start;
+}
+.rightContainer form {
+    width: 328px;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    border: 1px solid #444444;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.90rem;
+}
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.90rem;
+}
+.btn {
+    display: block;
+    width: 100%;
+    background-color: #222222;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    color: white;
+    font-weight: 700;
+    font-size: 0.90rem;
+    text-transform: uppercase;
+}
+.btn:hover {
+    background-color: #444444;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        flex-direction: row;
+        height: 100vh;
+    }
+    .leftContainer,.rightContainer {
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+    .leftChild {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .leftChild div {
+        text-align: center;
+    }
+    .leftChild img {
+        width: 130px;
+    }
+}
